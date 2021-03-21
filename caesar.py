@@ -1,4 +1,4 @@
-from define_word import defineWord
+from old_define import defineWord
 from secrets import randbelow
 import argparse
 import re

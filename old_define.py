@@ -5,12 +5,12 @@ from os import environ
 from re import sub
 
 
-my_key = environ['DICT_KEY']
-r_url = 'https://www.dictionaryapi.com/api/v1/references/collegiate/xml/'
+my_key = environ.get("MERRIAM_DICT")
+url = 'https://www.dictionaryapi.com/api/v1/references/collegiate/xml/'
 
 
 def defineWord(word):
-    r = get(r_url + word + '?key=' + my_key)
+    r = get(url + word + '?key=' + my_key)
     try:
         root = ET.fromstring(r.content)
     except ET.ParseError:

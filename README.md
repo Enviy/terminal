@@ -2,13 +2,13 @@
 Sharing things I like to use in terminal
 I think it's great to alias these scripts in .bash_profile so they can be called like:
 
-alias define="python3 <path>/define_word.py"
+alias define="python3 <path>/define_word.py -d"
 ```
 $ define [term]
 ```
 OR
   
-alias wiki="python3 <path>/wiki.py -d"
+alias wiki="python3 <path>/wiki.py -s"
 ```
 $ wiki [term/phrase]
 ```
